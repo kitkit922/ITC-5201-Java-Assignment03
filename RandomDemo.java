@@ -2,7 +2,6 @@
 import javax.swing.*;
 
 import data.*;
-import presentation.*;
 
 /**
  * Assignment: #03
@@ -17,9 +16,6 @@ public class RandomDemo {
     private final static String PATH = "./data/RandomFileData.dat";
 
     public static void main(String[] args) {
-        JFrame frame = new RandomUI();
-        frame.setDefaultCloseOperation(3);
-        frame.setVisible(true);
-        // RandomIO controller = new RandomIO(PATH);
+        RandomIO controller = new RandomIO(PATH);
     }
 }
